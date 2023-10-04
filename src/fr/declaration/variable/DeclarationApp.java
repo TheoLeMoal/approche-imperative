@@ -5,7 +5,7 @@ public class DeclarationApp {
 		/**
 		 * Déclaration de chacun des types avec un littéral différent de 0 pour les chiffres
 		 */
-		byte byteVariable = 10;
+		byte byteVariable = 1;
 		short shortVariable = -17282;
 		int intVariable = 2846325;
 		long longVariable = 10000L;

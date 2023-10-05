@@ -19,7 +19,11 @@ public class InteractifFibonacci {
         scanner.close();
     }
 
-    // Méthode récursive pour calculer le nombre de rang N dans la suite de Fibonacci
+    /**
+     *  Méthode récursive pour calculer le nombre de rang N dans la suite de Fibonacci
+     * @param n
+     * @return
+     */
     public static int calculerFibonacci(int n) {
         if (n == 0) {
             return 0;

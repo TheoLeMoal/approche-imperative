@@ -8,6 +8,9 @@ public class InteractifStockageNombre {
         int[] tableau = new int[10];
         int nombreElements = 0;
         while (true) {
+        	/**
+        	 * Affichage du menu
+        	 */
             System.out.println("----------------Menu----------------");
             System.out.println("1. Ajouter un nombre");
             System.out.println("2. Afficher les nombres existants");
@@ -18,7 +21,9 @@ public class InteractifStockageNombre {
             switch (choix) {
                 case 1:
                     if (nombreElements == tableau.length) {
-                        // Si le tableau est plein, agrandir le tableau
+                        /*
+                         *  Si le tableau est plein, agrandir le tableau
+                         */
                         int nouvelleTaille = tableau.length * 2;
                         int[] nouveauTableau = new int[nouvelleTaille];
                         for (int i = 0; i < tableau.length; i++) {
@@ -33,6 +38,9 @@ public class InteractifStockageNombre {
                     nombreElements++;
                     break;
                 case 2:
+                	/**
+                	 * Affichage des éléments du tableau
+                	 */
                     System.out.println("Nombres existants :");
                     for (int i = 0; i < nombreElements; i++) {
                         System.out.print(tableau[i] + " ");
@@ -40,10 +48,16 @@ public class InteractifStockageNombre {
                     System.out.println();
                     break;
                 case 3:
+                	/**
+                	 * Quitter l'application
+                	 */
                     System.out.println("Au revoir !");
                     scanner.close();
                     System.exit(0);
                 default:
+                	/**
+                	 * Si l'option existe pas
+                	 */
                     System.out.println("Option invalide.");
                     break;
             }

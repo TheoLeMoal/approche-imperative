@@ -10,6 +10,10 @@ public class InteractifTantQue {
 		while(verif == false) {
 			Scanner scanner = new Scanner(System.in) ;
 			nb = scanner.nextInt() ;
+			/**
+			 * Tant que ce nombre n’est pas compris entre 1 et 10, le programme redemande un 
+			 * nombre à l’utilisateur
+			 */
 			if (nb >= 1 && nb <= 10) {
 				verif = true;
 			}

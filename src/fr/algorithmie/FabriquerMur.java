@@ -19,7 +19,9 @@ public class FabriquerMur {
 	
 		static boolean fabriquerMur(int nbSmall, int nbBig, int longueur) {
 			boolean resultat = false;
-			//On vérifie le nombre de briques de longueur 5 que l'on peux mettre
+			/**
+			 * On vérifie le nombre de briques de longueur 5 que l'on peux mettre
+			 */
 			if (nbBig != 0) {
 				for (int i = 0; i < nbBig; i++) {
 					if (longueur >= 5) {
@@ -30,7 +32,9 @@ public class FabriquerMur {
 					
 				}
 			}
-			//On vérifie le nombre de briques de longueur 1 que l'on peux mettre
+			/**
+			 * On vérifie le nombre de briques de longueur 1 que l'on peux mettre
+			 */
 			if (nbSmall != 0) {
 				for (int i = 0; i < nbSmall; i++) {
 					if (longueur >= 1) {
@@ -40,7 +44,9 @@ public class FabriquerMur {
 					}
 				}
 			}
-			//Si le nombre de brique est suffisant pour remplire la longueur alors le résultat est true
+			/**
+			 * Si le nombre de brique est suffisant pour remplire la longueur alors le résultat est true
+			 */
 			if (longueur == 0) {
 				resultat = true;
 			}

@@ -7,6 +7,10 @@ public class InteractifPlusGrand {
 	public static void main(String[] args) {
 		int[] tabNb = new int[10];
 		int maxNb = 0;
+		/**
+		 * Demande 10 nombres
+		 */
+		System.out.println("Choisisez 10 nombres : ");
 		for (int i = 0; i < tabNb.length; i++) {
 			Scanner scanner = new Scanner(System.in) ;
 			int nb = scanner.nextInt() ;
@@ -18,7 +22,7 @@ public class InteractifPlusGrand {
 			}
 			
 		}
-		System.out.println(maxNb);
+		System.out.println("Le nombre le plus grand est : " + maxNb);
 	}
 
 }
